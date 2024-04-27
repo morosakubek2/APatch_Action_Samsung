@@ -163,7 +163,6 @@ jobs:
         
         cd android-kernel
         git apply $GITHUB_WORKSPACE/kernel_workspace/module_fix.patch
-        cp -r $GITHUB_WORKSPACE/kernel_workspace/apatch
 
     - name: Setup Configuration for Kernel
       run: |
