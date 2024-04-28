@@ -157,8 +157,8 @@ jobs:
 
     - name: module patch
       run: |
-        cp -r $GITHUB_WORKSPACE/module_fix.patch $GITHUB_WORKSPACE/kernel_workspace/module_fix.patch
-        cp -r $GITHUB_WORKSPACE/apatch $GITHUB_WORKSPACE/kernel_workspace/apatch
+        mv $GITHUB_WORKSPACE/module_fix.patch $GITHUB_WORKSPACE/kernel_workspace/module_fix.patch
+        mv $GITHUB_WORKSPACE/apatch $GITHUB_WORKSPACE/kernel_workspace/apatch
         cd $GITHUB_WORKSPACE/kernel_workspace
         
         cd android-kernel
