@@ -158,8 +158,9 @@ jobs:
     - name: module patch
       run: |
         ls $GITHUB_WORKSPACE
-        mv ../module_fix.patch $GITHUB_WORKSPACE/kernel_workspace/
-        mv ../apatch $GITHUB_WORKSPACE/kernel_workspace/
+        mv $GITHUB_WORKSPACE/module_fix.patch $GITHUB_WORKSPACE/kernel_workspace/
+        mv $GITHUB_WORKSPACE/apatch $GITHUB_WORKSPACE/kernel_workspace/
+        ls $GITHUB_WORKSPACE/kernel_workspace/
         cd $GITHUB_WORKSPACE/kernel_workspace
         
         cd android-kernel
