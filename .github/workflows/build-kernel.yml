@@ -159,7 +159,7 @@ jobs:
       run: |
         ls $GITHUB_WORKSPACE
         cp $GITHUB_WORKSPACE/module_fix.patch $GITHUB_WORKSPACE/kernel_workspace/
-        cp -r $GITHUB_WORKSPACE/apatch $GITHUB_WORKSPACE/kernel_workspace/
+        cp -r $GITHUB_WORKSPACE/apatch $GITHUB_WORKSPACE/kernel_workspace/android-kernel/
         echo "copy patch"
         ls $GITHUB_WORKSPACE/kernel_workspace/
         cd $GITHUB_WORKSPACE/kernel_workspace
